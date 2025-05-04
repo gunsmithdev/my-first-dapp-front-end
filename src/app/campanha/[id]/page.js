@@ -103,16 +103,9 @@ export default function Campanha() {
 								</button>
 							</div>
 						</div>
-						{message ? (
-							<div
-								className="alert alert-success p-3 col-12 mt-3"
-								role="alert"
-							>
-								{message}
-							</div>
-						) : (
-							<></>
-						)}
+						{
+                        message && <div className="alert alert-success p-3 col-12 mt-3" role="alert">{message}</div>
+						}
 					</div>
 				</div>
 			</div>

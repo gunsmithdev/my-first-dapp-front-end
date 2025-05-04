@@ -93,13 +93,9 @@ export default function Criar() {
 							Salvar
 						</button>
 					</div>
-					{message ? (
-						<div className="alert alert-success mt-3" role="alert">
-							<strong>{message}</strong>
-						</div>
-					) : (
-						<></>
-					)}
+					{
+                    message && <div className="alert alert-success mt-3" role="alert"><strong>{message}</strong></div>
+					}
 				</div>
 			</div>
 		</>
